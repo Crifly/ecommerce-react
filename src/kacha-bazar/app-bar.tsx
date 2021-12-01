@@ -70,7 +70,7 @@ export const AppBarOne = view(() => {
                                             <img width="110px" height="110px" src="https://kachabazar-store.vercel.app/_next/image?url=%2Flogo%2Flogo-light.svg&w=128&q=75" alt="logo" />
                                         </div>
                                         <div style={{ width: '63%', marginLeft: '10%' }} >
-                                            <input type="text" name="" id="" placeholder="Search For Products and stuff (e.g fish,oil,apple)" style={{ width: '100%', height: '42px', borderRadius: '5px', border: 'none', paddingLeft: '20px', paddingRight: '20px' }}
+                                            <input type="text" name="" id="" placeholder="Search For Products (e.g fish,oil,apple)" style={{ width: '100%', height: '42px', borderRadius: '5px', border: 'none', paddingLeft: '20px', paddingRight: '20px' }}
 
                                             />
                                         </div>
