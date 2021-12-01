@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.list-item-button-hover-style>div {
+    color: white;
+}
+
+.list-item-button-hover-style>div:hover {
+    color: #C1E79F;
+}
+
+.secondary-list-item-hover-style {
+    color: white;
+}
+
+.secondary-list-item-hover-style:hover {
+    color: #C1E79F;
+}
+
+.list-item-button-hover-background-style:hover {
+    background: none;
+    background: none;
+}

@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 786px) {
+    .logo-style {
+        width: 100%;
+        height: auto;
+    }
+    .border-bottom {
+        border-bottom: none;
+        border-left: none;
+    }
+    .drawer-style {
+        height: 0;
+    }
+    .chose-here-text-feild-style {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .overall-statistics {
+        width: 10rem;
+    }
+    .welcome-font-size {
+        font-size: 25px;
+    }
+    .btns-deck-style {
+        border-bottom: 0.1px solid lightgrey;
+    }
+    .doghnut-graph-height-style {
+        height: 15rem;
+    }
+    .rated-food-grid-item-margin-style {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .top-deliveryman-by-order-grid-item-margin-style {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .margin-right-top-rated-food-p {
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .top-deliveryman-by-order-grid-item-margin-style-second {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .rated-food-grid-item-margin-style-second {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 786px) {
+    .logo-style {
+        width: 150px;
+    }
+    .border-bottom {
+        border-bottom: 1px solid lightgrey;
+        border-left: 1px solid lightgrey;
+    }
+    .drawer-style {
+        height: 70rem;
+    }
+    .chose-here-text-feild-style {
+        display: flex;
+        justify-content: flex-end;
+        ;
+    }
+    .overall-statistics {
+        width: 17rem;
+    }
+    .welcome-font-size {
+        font-size: 30px;
+    }
+    .btns-deck-style {
+        border-right: 0.1px solid lightgrey;
+    }
+    .doghnut-graph-height-style {
+        height: 20rem;
+    }
+    .rated-food-grid-item-margin-style {
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .top-deliveryman-by-order-grid-item-margin-style {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        height: 27rem;
+    }
+    .margin-right-top-rated-food-p {
+        margin-right: 30px;
+    }
+    .center-image-height-style {
+        height: 9rem;
+    }
+    .top-deliveryman-by-order-grid-item-margin-style-second {
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 27rem
+    }
+    .rated-food-grid-item-margin-style-second {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* global style */
+
+.hot-selling-food-background-pic {
+    height: 6rem;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.hot-selling-food-background-pic-fourth {
+    background-image: url('https://demo.6amtech.com/stackfood/storage/app/public/product/2021-08-21-6120e7a4b7b2a.png');
+    height: 8rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.hot-selling-food-background-pic-one {
+    background-image: url('https://demo.6amtech.com/stackfood/storage/app/public/product/2021-08-21-6120e7a4b7b2a.png');
+    height: 8rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.hot-selling-food-background-pic-two {
+    background-image: url('https://demo.6amtech.com/stackfood/storage/app/public/product/2021-08-21-6120cf263b7e2.png');
+    height: 8rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.hot-selling-food-background-pic-three {
+    background-image: url('https://demo.6amtech.com/stackfood/storage/app/public/product/2021-08-21-612007ca5affc.png');
+    height: 8rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.hot-selling-food-background-pic-five {
+    background-image: url('https://demo.6amtech.com/stackfood/storage/app/public/product/2021-08-21-611ff39525320.png');
+    height: 8rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.hot-selling-food-background-pic-six {
+    background-image: url('https://demo.6amtech.com/stackfood/storage/app/public/product/2021-08-21-6120e6dadf410.png');
+    height: 8rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
