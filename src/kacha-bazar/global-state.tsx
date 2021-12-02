@@ -1,6 +1,6 @@
 import react from 'react'
 import { store, view } from '@risingstack/react-easy-state'
-import { number } from 'yup/lib/locale'
+import { boolean, number } from 'yup/lib/locale'
 
 
 
@@ -66,7 +66,7 @@ export var state = store({
             productName: 'Bluebery',
             productPrice: '$15',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -76,7 +76,7 @@ export var state = store({
             productName: 'Calabaza Saquash',
             productPrice: '$15',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -86,7 +86,7 @@ export var state = store({
             productName: 'Letuce',
             productPrice: '$14',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -96,7 +96,7 @@ export var state = store({
             productName: 'Radicchio',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -106,7 +106,7 @@ export var state = store({
             productName: 'Parsley',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
 
@@ -117,7 +117,7 @@ export var state = store({
             productName: 'Strawberrie',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
 
@@ -128,7 +128,7 @@ export var state = store({
             productName: 'Cauliflower',
             productPrice: '$15',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
 
@@ -139,7 +139,7 @@ export var state = store({
             productName: 'Organic Purple Cauliflower',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -149,7 +149,7 @@ export var state = store({
             productName: 'Ahold Acorn Squash',
             productPrice: '$15',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -159,7 +159,7 @@ export var state = store({
             productName: 'Bok Choy Cabbage',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -169,7 +169,7 @@ export var state = store({
             productName: 'Aloe Vera Leaf',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -179,7 +179,7 @@ export var state = store({
             productName: 'Pineapple Imported',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -189,7 +189,7 @@ export var state = store({
             productName: 'Strawberrie Package',
             productPrice: '$14',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
         {
@@ -199,7 +199,7 @@ export var state = store({
             productName: 'Organic Broccoli',
             productPrice: '$12',
             status: 'false',
-            detailDescription:'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
         },
 
 
@@ -209,6 +209,8 @@ export var state = store({
     ],
     // for disconted items
     discountedItemsList: [
+
+        
         {
             id: 1,
             prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FtJjqNZrD%2FOrange-Bell-Pepper-22ct.jpg&w=256&q=75',
@@ -437,97 +439,97 @@ export var state = store({
         },
     ],
 
-    categoryFishAndMeat : [
+    categoryFishAndMeat: [
         {
-            id:1,
-            name:'fish & meat',
+            id: 1,
+            name: 'fish & meat',
         },
 
         {
-            id:2,
-            name:'fruit & vegetable',
+            id: 2,
+            name: 'fruit & vegetable',
         },
 
         {
-            id:3,
-            name:'fish & meat',
+            id: 3,
+            name: 'fresh seafood',
         },
 
         {
-            id:4,
-            name:'fish & meat',
+            id: 4,
+            name: 'cooking essentials',
         },
 
         {
-            id:5,
-            name:'fish & meat',
+            id: 5,
+            name: 'breakfast',
         },
 
         {
-            id:6,
-            name:'fish & meat',
+            id: 6,
+            name: 'drinks',
         },
 
         {
-            id:7,
-            name:'fish & meat',
+            id: 7,
+            name: 'milk & dairy',
         },
 
         {
-            id:8,
-            name:'fish & meat',
+            id: 8,
+            name: 'organic food',
         },
 
         {
-            id:9,
-            name:'fish & meat',
+            id: 9,
+            name: 'honey',
         },
 
         {
-            id:10,
-            name:'fish & meat',
+            id: 10,
+            name: 'sauces & pickles',
         },
 
         {
-            id:11,
-            name:'fish & meat',
+            id: 11,
+            name: 'jam & jelly',
         },
 
         {
-            id:12,
-            name:'fish & meat',
+            id: 12,
+            name: 'snacks & instant',
         },
 
         {
-            id:13,
-            name:'fish & meat',
+            id: 13,
+            name: 'biscuit & cakes',
         },
 
         {
-            id:14,
-            name:'fish & meat',
+            id: 14,
+            name: 'household tools',
         },
 
         {
-            id:15,
-            name:'fish & meat',
+            id: 15,
+            name: 'baby care',
         },
 
         {
-            id:16,
-            name:'fish & meat',
+            id: 16,
+            name: 'pet care',
         },
 
         {
-            id:17,
-            name:'fish & meat',
+            id: 17,
+            name: 'beauty & health',
         },
 
         {
-            id:18,
-            name:'fish & meat',
+            id: 18,
+            name: 'sports & fitness',
         },
-        
+
 
     ],
 
@@ -606,4 +608,7 @@ export var state = store({
     getID: 0,
 
 
+    
+
 })
+

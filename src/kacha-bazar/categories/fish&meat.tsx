@@ -2,6 +2,7 @@ import { Grid, useMediaQuery, useTheme } from '@mui/material'
 import React from 'react'
 import { AppBarOne } from '../app-bar'
 import { CategoryDawer } from '../categories/category-drawer'
+import {CategoryFishAndMeatCards} from '../product-card'
 
 
 
@@ -33,18 +34,13 @@ export const FishAndMeat = () => {
                                 <Grid container >
 
                                     <Grid item lg={3} >
-                                        <div style={{ backgroundColor: 'white', padding: '10px', width: '90%', margin: 'auto' }} >
+                                        <div style={{ backgroundColor: 'white', padding: '10px', width: '85%', margin: 'auto' }} >
                                             <CategoryDawer />
                                         </div>
                                     </Grid>
 
                                     <Grid item xs={12} md={12} lg={9} >
-                                        <Grid container >
-                                            <Grid item xs={6} md={4} lg={2} >
-
-                                                <Grid />
-                                            </Grid>
-                                        </Grid>
+                                        <CategoryFishAndMeatCards/>
                                     </Grid>
                                 </Grid>
                             </div>
