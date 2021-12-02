@@ -58,6 +58,10 @@
     align-items: center;
 }
 
+#hover-style:hover{
+    cursor: pointer;
+}
+
 #product-card:hover{
     cursor: pointer;
 }

@@ -17,10 +17,11 @@ import {FoodsListFunction} from './food-management/foodslist'
 import { DeliveryManFunction} from './deliveryManSection/add-delivery-man'
 import {FormValidationWithFormik} from './form-validation-with-formil'
 
+
 // for kacha-bazar 
 
 import {HomePage} from './kacha-bazar/home-page'
-
+import {FishAndMeat} from './kacha-bazar/categories/fish&meat'
 
 export const App = () => {
 
@@ -74,7 +75,10 @@ export const App = () => {
       <Router>
 
         <Routes>
+
           <Route path="/" element={<HomePage/>} />
+          <Route path="/category/fish&meat" element={<FishAndMeat/>} />
+
         </Routes>
       </Router>
     </>

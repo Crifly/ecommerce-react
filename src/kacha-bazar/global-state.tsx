@@ -437,6 +437,100 @@ export var state = store({
         },
     ],
 
+    categoryFishAndMeat : [
+        {
+            id:1,
+            name:'fish & meat',
+        },
+
+        {
+            id:2,
+            name:'fruit & vegetable',
+        },
+
+        {
+            id:3,
+            name:'fish & meat',
+        },
+
+        {
+            id:4,
+            name:'fish & meat',
+        },
+
+        {
+            id:5,
+            name:'fish & meat',
+        },
+
+        {
+            id:6,
+            name:'fish & meat',
+        },
+
+        {
+            id:7,
+            name:'fish & meat',
+        },
+
+        {
+            id:8,
+            name:'fish & meat',
+        },
+
+        {
+            id:9,
+            name:'fish & meat',
+        },
+
+        {
+            id:10,
+            name:'fish & meat',
+        },
+
+        {
+            id:11,
+            name:'fish & meat',
+        },
+
+        {
+            id:12,
+            name:'fish & meat',
+        },
+
+        {
+            id:13,
+            name:'fish & meat',
+        },
+
+        {
+            id:14,
+            name:'fish & meat',
+        },
+
+        {
+            id:15,
+            name:'fish & meat',
+        },
+
+        {
+            id:16,
+            name:'fish & meat',
+        },
+
+        {
+            id:17,
+            name:'fish & meat',
+        },
+
+        {
+            id:18,
+            name:'fish & meat',
+        },
+        
+
+    ],
+
     cartItem: 0,
     totalCartItems: () => {
         if (state.cartItems.length == 0) {

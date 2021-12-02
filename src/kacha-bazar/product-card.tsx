@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { view } from '@risingstack/react-easy-state'
 import { state } from './global-state'
-import { Button, Dialog, DialogContent, DialogTitle, Grid, IconButton } from '@mui/material'
+import { Button, Dialog, DialogContent, DialogTitle, Fade, Grid, IconButton } from '@mui/material'
 import { AddOutlined, AddShoppingCartOutlined, Lock, RemoveOutlined } from '@mui/icons-material'
 import { number } from 'yup/lib/locale'
+import { width } from '@mui/system'
 
 
 export const ProductCard = view(() => {
@@ -34,7 +35,7 @@ export const ProductCard = view(() => {
 
     return (
         <>
-            
+
 
             <div>
                 <Grid container spacing={2} >
@@ -89,16 +90,17 @@ export const ProductCard = view(() => {
 
                 {
                     state.popularProductsForDailyShoping.filter(x => x.id == state.getID).map(x => (
-                        <Dialog open={isDialogOpen} onClose={handleClose} fullWidth maxWidth="md"  >
-                            
+
+                        <Dialog sx={{ borderRadius: '20px' }} open={isDialogOpen} onClose={handleClose} fullWidth maxWidth="md"  >
+
                             <DialogContent>
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '5px' }} >
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', padding: '5px' }} >
                                     <div style={{ width: '50%' }} >
                                         <img width="70%" height="70%" src={x.prdctImg} alt="" />
                                     </div>
 
-                                    <div style={{ width: "50%" }} >
-                                        <p style={{fontSize:'26px',fontWeight:'bold',marginBottom:'20px'}} >
+                                    <div style={{ width: "50%",height:'17rem' }} >
+                                        <p style={{ fontSize: '26px', fontWeight: 'bold', marginBottom: '20px' }} >
                                             {x.productName}
                                         </p>
                                         <p>
@@ -106,11 +108,37 @@ export const ProductCard = view(() => {
                                                 x.detailDescription
                                             }
                                         </p>
+                                        <p style={{marginTop:'15px',fontSize:'22px',fontWeight:'bold'}} >
+                                            {
+                                                x.productPrice
+                                            }
+                                        </p>
+
+                                        <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',height:'5rem'}} >
+                                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',width:'45%',border:'1px solid lightgray',paddingLeft:'10px',paddingRight:'10px',borderRadius:'10px',paddingTop:'2px',paddingBottom:'2px' }} >
+                                                <IconButton>
+                                                    <RemoveOutlined />
+                                                </IconButton>
+                                                <p>
+                                                    {state.getQuantityInCart(x.id)}
+                                                </p>
+                                                <IconButton>
+                                                    <AddOutlined />
+                                                </IconButton>
+
+                                            </div>
+                                            <div style={{width:'50%'}} >
+                                                <Button variant="contained" style={{backgroundColor:'#12B981',color:'white',paddingLeft:'40px',paddingRight:'40px',borderRadius:'10px',paddingTop:'10px',paddingBottom:'10px'}} >
+                                                    Add To Cart
+                                                </Button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </DialogContent>
 
                         </Dialog>
+
                     ))
 
                 }
