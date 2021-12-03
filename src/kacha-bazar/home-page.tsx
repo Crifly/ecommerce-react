@@ -8,6 +8,8 @@ import { view } from '@risingstack/react-easy-state'
 import { state } from './global-state'
 import { ProductCard, DiscountedItemCards } from './product-card'
 import {FooterKachaBazar} from './footer-kacha-bazar'
+import { create } from 'domain';
+import { createBrowserHistory } from 'history';
 
 
 export const HomePage = view(() => {
@@ -159,7 +161,10 @@ export const HomePage = view(() => {
                     <Grid container spacing={2} >
                         <Grid item xs={6} md={2} >
 
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', border: '1px solid lightgray', padding: '12px', borderColor: '#F3F4F6', borderRadius: '10px' }} >
+                            <div id="hover-style" onClick={() => {
+                                createBrowserHistory().push('/category/fish&meat');
+                                window.location.reload()
+                            }}  style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', border: '1px solid lightgray', padding: '12px', borderColor: '#F3F4F6', borderRadius: '10px' }} >
                                 <img width="40px" height="=40px" src="https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fy0zXYj5%2Fcarp-fish.png&w=48&q=75" alt="fish" />
                                 <p style={{ marginLeft: '10px' }} >
                                     Fish & Meat
