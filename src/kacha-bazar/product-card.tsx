@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { view } from '@risingstack/react-easy-state'
 import { state } from './global-state'
-import { Button, Dialog, DialogContent, DialogTitle, Fade, Grid, IconButton } from '@mui/material'
+import { Button, Dialog, DialogContent, DialogTitle, Fade, Grid, IconButton,useMediaQuery,useTheme } from '@mui/material'
 import { AddOutlined, AddShoppingCartOutlined, Lock, RemoveOutlined } from '@mui/icons-material'
 import { number } from 'yup/lib/locale'
 import { width } from '@mui/system'
+
 
 
 export const ProductCard = view(() => {
@@ -33,6 +34,7 @@ export const ProductCard = view(() => {
 
 
 
+
     return (
         <>
 
@@ -42,7 +44,7 @@ export const ProductCard = view(() => {
                     {
                         state.popularProductsForDailyShoping.map(x => (
                             <Grid item xs={6} md={4} lg={2} >
-                                <div  id="product-card" style={{ border: '1px solid #F1F2F3', borderRadius: '10px', paddingLeft: '15px', width: '100%', paddingRight: '15px', paddingBottom: '15px' }} >
+                                <div id="product-card" style={{ border: '1px solid #F1F2F3', borderRadius: '10px', paddingLeft: '15px', width: '100%', paddingRight: '15px', paddingBottom: '15px' }} >
                                     <div onClick={() => { state.getID = x.id; setIsDialogOpen(true) }} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}  >
                                         <img id="img-zoom-in" width="150px" height="150px" src={x.prdctImg} alt="img" />
                                     </div>
@@ -99,7 +101,7 @@ export const ProductCard = view(() => {
                                         <img width="70%" height="70%" src={x.prdctImg} alt="" />
                                     </div>
 
-                                    <div style={{ width: "50%",height:'17rem' }} >
+                                    <div style={{ width: "50%", height: '17rem' }} >
                                         <p style={{ fontSize: '26px', fontWeight: 'bold', marginBottom: '20px' }} >
                                             {x.productName}
                                         </p>
@@ -108,14 +110,14 @@ export const ProductCard = view(() => {
                                                 x.detailDescription
                                             }
                                         </p>
-                                        <p style={{marginTop:'15px',fontSize:'22px',fontWeight:'bold'}} >
+                                        <p style={{ marginTop: '15px', fontSize: '22px', fontWeight: 'bold' }} >
                                             {
                                                 x.productPrice
                                             }
                                         </p>
 
-                                        <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',height:'5rem'}} >
-                                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',width:'45%',border:'1px solid lightgray',paddingLeft:'10px',paddingRight:'10px',borderRadius:'10px',paddingTop:'2px',paddingBottom:'2px' }} >
+                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '5rem' }} >
+                                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '45%', border: '1px solid lightgray', paddingLeft: '10px', paddingRight: '10px', borderRadius: '10px', paddingTop: '2px', paddingBottom: '2px' }} >
                                                 <IconButton>
                                                     <RemoveOutlined />
                                                 </IconButton>
@@ -127,8 +129,8 @@ export const ProductCard = view(() => {
                                                 </IconButton>
 
                                             </div>
-                                            <div style={{width:'50%'}} >
-                                                <Button variant="contained" style={{backgroundColor:'#12B981',color:'white',paddingLeft:'40px',paddingRight:'40px',borderRadius:'10px',paddingTop:'10px',paddingBottom:'10px'}} >
+                                            <div style={{ width: '50%' }} >
+                                                <Button variant="contained" style={{ backgroundColor: '#12B981', color: 'white', paddingLeft: '40px', paddingRight: '40px', borderRadius: '10px', paddingTop: '10px', paddingBottom: '10px' }} >
                                                     Add To Cart
                                                 </Button>
                                             </div>
@@ -235,8 +237,11 @@ export const DiscountedItemCards = () => {
 
 // fish and meat category cards 
 
-export const CategoryFishAndMeatCards = view( () =>{
+export const CategoryFishAndMeatCards = view(() => {
     const [isDialogOpen, setIsDialogOpen] = useState(false)
+    const [isLoadBtnClicked, setIsLoadBtnClicked] = useState(false);
+    const theme = useTheme()
+    const isMatch = useMediaQuery(theme.breakpoints.down('sm'))
 
     const handleClose = () => {
         setIsDialogOpen(false)
@@ -258,16 +263,22 @@ export const CategoryFishAndMeatCards = view( () =>{
     const handlePlusBtn = () => {
         state.addCartItem()
     }
-    return(
-        <> 
+
+    const isLenthy = state.fishAndMeatsList.length;
+
+
+    return (
+
+
+        <>
             <div>
                 <Grid container columns={15} spacing={2} >
                     {
-                        state.popularProductsForDailyShoping.map(x => (
-                            <Grid item xs={6} md={4} lg={3} >
-                                <div  id="product-card" style={{ border: '1px solid #F1F2F3', borderRadius: '10px', paddingLeft: '15px', width: '100%', paddingRight: '15px', paddingBottom: '15px',backgroundColor:'white',padding:'16px' }} >
+                        state.fishAndMeatsList.filter(x => isLoadBtnClicked == true ? x.id : x.id < 16).map(x => (
+                            <Grid item xs={5} md={5} lg={3} >
+                                <div id="product-card" style={{ border: '1px solid #F1F2F3', borderRadius: '10px', paddingLeft: '15px', width: '100%', paddingRight: '15px', paddingBottom: '15px', backgroundColor: 'white', padding: '16px' }} >
                                     <div onClick={() => { state.getID = x.id; setIsDialogOpen(true) }} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}  >
-                                        <img  id="img-zoom-in" width="130px" height="130px" src={x.prdctImg} alt="img" style={{backgroundColor:'none',background:'none'}} />
+                                        <img id="img-zoom-in" width="120px" height="120px" src={x.prdctImg} alt="img" style={{ backgroundColor: 'none', background: 'none' }} />
                                     </div>
                                     <p style={{ color: 'gray', fontSize: '14px', marginTop: '2px' }} >
                                         {x.description}
@@ -298,7 +309,7 @@ export const CategoryFishAndMeatCards = view( () =>{
 
                                 </div>
 
-                                {/* dialog */}
+                                
 
 
 
@@ -309,6 +320,47 @@ export const CategoryFishAndMeatCards = view( () =>{
                     }
                 </Grid>
 
+                {/* LOAD MORE BUTTON */}
+                {
+                    isLenthy > 15 ?
+
+                        <div style={{ marginTop: '20px', marginBottom: '20px', width: '100%', padding: '10px' }} >
+
+                            <Grid item xs={12} >
+                                <div style={{ display: 'flex', justifyContent: 'center' }} >
+                                    <div>
+                                        {
+                                            isLoadBtnClicked == false ? 
+
+                                            <Button onClick={() => {
+                                                setIsLoadBtnClicked(true);
+                                            }} id="load-btn-hover-style" variant="contained" style={{ textTransform: 'capitalize', paddingLeft: '30px', paddingRight: '30px', paddingTop: '10px', paddingBottom: '10px' }} >
+                                                Load More
+                                            </Button>
+                                            :
+                                            <Button onClick={() => {
+                                                setIsLoadBtnClicked(false);
+                                            }} id="load-btn-hover-style" variant="contained" style={{ textTransform: 'capitalize', paddingLeft: '30px', paddingRight: '30px', paddingTop: '10px', paddingBottom: '10px' }} >
+                                                Show Less
+                                            </Button>
+                                        }
+                                    </div>
+                                </div>
+                            </Grid>
+
+                        </div>
+
+                        :
+
+                        <div>
+
+                        </div>
+                }
+
+
+
+
+                        {/* dialog */}
 
 
                 {
@@ -319,10 +371,10 @@ export const CategoryFishAndMeatCards = view( () =>{
                             <DialogContent>
                                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', padding: '5px' }} >
                                     <div style={{ width: '50%' }} >
-                                        <img width="70%" height="70%" src={x.prdctImg} alt="" />
+                                        <img  style={{width: isMatch ? '90%' : "70%", height: isMatch ? '90%' : "70%"}} src={x.prdctImg} alt="" />
                                     </div>
 
-                                    <div style={{ width: "50%",height:'17rem' }} >
+                                    <div style={{ width: "50%", height: '17rem' }} >
                                         <p style={{ fontSize: '26px', fontWeight: 'bold', marginBottom: '20px' }} >
                                             {x.productName}
                                         </p>
@@ -331,14 +383,14 @@ export const CategoryFishAndMeatCards = view( () =>{
                                                 x.detailDescription
                                             }
                                         </p>
-                                        <p style={{marginTop:'15px',fontSize:'22px',fontWeight:'bold'}} >
+                                        <p style={{ marginTop: '15px', fontSize: '22px', fontWeight: 'bold' }} >
                                             {
                                                 x.productPrice
                                             }
                                         </p>
 
-                                        <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',height:'5rem'}} >
-                                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',width:'45%',border:'1px solid lightgray',paddingLeft:'10px',paddingRight:'10px',borderRadius:'10px',paddingTop:'2px',paddingBottom:'2px' }} >
+                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '5rem' }} >
+                                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '45%', border: '1px solid lightgray', paddingLeft: '10px', paddingRight: '10px', borderRadius: '10px', paddingTop: '2px', paddingBottom: '2px' }} >
                                                 <IconButton>
                                                     <RemoveOutlined />
                                                 </IconButton>
@@ -350,8 +402,8 @@ export const CategoryFishAndMeatCards = view( () =>{
                                                 </IconButton>
 
                                             </div>
-                                            <div style={{width:'50%'}} >
-                                                <Button variant="contained" style={{backgroundColor:'#12B981',color:'white',paddingLeft:'40px',paddingRight:'40px',borderRadius:'10px',paddingTop:'10px',paddingBottom:'10px'}} >
+                                            <div style={{ width: isMatch ? '' : '50%' }} >
+                                                <Button variant="contained" style={{ backgroundColor: '#12B981', color: 'white', paddingLeft: '40px', paddingRight: '40px', borderRadius: '10px', paddingTop: '10px', paddingBottom: '10px' }} >
                                                     Add To Cart
                                                 </Button>
                                             </div>

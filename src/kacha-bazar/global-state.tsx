@@ -3,7 +3,6 @@ import { store, view } from '@risingstack/react-easy-state'
 import { boolean, number } from 'yup/lib/locale'
 
 
-
 let c:
     {
         quantity: number,
@@ -210,7 +209,7 @@ export var state = store({
     // for disconted items
     discountedItemsList: [
 
-        
+
         {
             id: 1,
             prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FtJjqNZrD%2FOrange-Bell-Pepper-22ct.jpg&w=256&q=75',
@@ -608,7 +607,211 @@ export var state = store({
     getID: 0,
 
 
-    
+    fishAndMeatsList: [
+        {
+            id: 1,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F43NMbZkD%2FUSDC-Fresh-Rainbow-Trout-per-lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'fresh rainbow trout',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+
+        },
+
+        {
+            id: 2,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F7Y0pqmnW%2FTilapia-10lb.jpg&w=256&q=75',
+            description: '10lb',
+            productName: 'tilapia',
+            productPrice: '$13',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+
+        },
+
+        {
+            id: 3,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FYqGsb8PS%2FHilsa-fish.jpg&w=256&q=75',
+            description: '1kg',
+            productName: 'hilsa fish',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+
+        },
+
+        {
+            id: 4,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F7Y0pqmnW%2FTilapia-10lb.jpg&w=256&q=75',
+            description: '41lb',
+            productName: 'halibut',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 5,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F63Mm1Pw8%2FFresh-Wild-King-Salmon-Steak-1lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'wild king selmon steak',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 6,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F5tqG80Rq%2FFresh-Whole-Canada-Salmon-25-5-oz.jpg&w=256&q=75',
+            description: '5oz',
+            productName: 'canada selmon',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 7,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FbvjWGb3w%2FFresh-Whole-Atlantic-Salmon-Steaks-1lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'atlantic selmon',
+            productPrice: '$14',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 8,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FcCVTpyzL%2FLing-Cod-Steak-1lb.jpg&w=256&q=75',
+            description: '12ct',
+            productName: 'ling cod steak',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 9,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FG3QLb33D%2FBlack-Pearls-Salmon-Filet-Portion-6-oz.jpg&w=256&q=75',
+            description: '5oz',
+            productName: 'Salmon Filet Portion',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+
+        {
+            id: 10,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FRhVzWfCH%2FCooked-Peeled-Deveined-Shrimp-2lb.jpg&w=256&q=75',
+            description: '20oz',
+            productName: 'Peeled Deveined Shrimp',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+
+        {
+            id: 11,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FW37vpSVV%2FChilean-Sea-Bass-per-lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'Chilean Sea Bass',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+
+        {
+            id: 12,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F43NMbZkD%2FUSDC-Fresh-Rainbow-Trout-per-lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'fresh rainbow trout',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 13,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FYqGsb8PS%2FHilsa-fish.jpg&w=256&q=75',
+            description: '1kg',
+            productName: 'hilsa fish',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 14,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fjqk1HBZ9%2FHalibut-per-lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'halibut',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 15,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F63Mm1Pw8%2FFresh-Wild-King-Salmon-Steak-1lb.jpg&w=256&q=75',
+            description: 'each',
+            productName: 'wild king salmon steak',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+        {
+            id: 16,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F43NMbZkD%2FUSDC-Fresh-Rainbow-Trout-per-lb.jpg&w=256&q=75',
+            description: '1lb',
+            productName: 'fresh rainbow trout',
+            productPrice: '$12',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+
+        },
+
+        {
+            id: 17,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F7Y0pqmnW%2FTilapia-10lb.jpg&w=256&q=75',
+            description: '10lb',
+            productName: 'tilapia',
+            productPrice: '$13',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+
+        },
+
+        {
+            id: 18,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FYqGsb8PS%2FHilsa-fish.jpg&w=256&q=75',
+            description: '1kg',
+            productName: 'hilsa fish',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+
+        },
+
+        {
+            id: 19,
+            prdctImg: 'https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F7Y0pqmnW%2FTilapia-10lb.jpg&w=256&q=75',
+            description: '41lb',
+            productName: 'tilapia',
+            productPrice: '$15',
+            status: 'false',
+            detailDescription: 'Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root '
+        },
+
+
+
+
+
+    ],
 
 })
 
